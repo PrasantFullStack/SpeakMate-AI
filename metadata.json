@@ -1,0 +1,6 @@
+{
+  "name": "SpeakMate AI",
+  "description": "Multi-language AI speaking and learning SaaS platform with real-time Gemini Live voice tutoring, adaptive scenarios, bilingual grammar corrections, and progress analytics.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
