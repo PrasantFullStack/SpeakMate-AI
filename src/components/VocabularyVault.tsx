@@ -99,11 +99,11 @@ export const VocabularyVault: React.FC<VocabularyVaultProps> = ({
       {/* Sub-navigation Header */}
       <div className="bg-white border border-slate-200 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-xl font-bold text-slate-900 font-display">
-            Vocabulary Notebook, Saved Phrases & Revision Exercises
+          <h1 className="text-xl font-bold text-[#0A1128] font-display">
+            Interviews Cracker Vocabulary Notebook, Saved Phrases &amp; Revision Exercises
           </h1>
           <p className="text-xs text-slate-500 mt-0.5">
-            Review corrected sentences from your voice conversations and test retention with interactive grammar drills.
+            Review corrected technical &amp; HR interview sentences and test retention with interactive grammar drills.
           </p>
         </div>
 

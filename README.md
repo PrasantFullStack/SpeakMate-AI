@@ -1,28 +1,25 @@
-# SpeakMate AI — Real-Time Multi-Language Voice Tutor SaaS Platform
+# Interviews Cracker (`Interviews Cracker AI`) — AI Interview Preparation & Multi-Language Communication Coaching Platform
 
-SpeakMate AI helps learners worldwide master spoken languages through real-time two-way voice conversations with adaptive AI tutors, scenario-based role-play, and bilingual post-conversation diagnostics (including **Hindi-to-English** grammar explanations for Indian learners).
+**Interviews Cracker** is an AI-powered interview preparation and communication coaching SaaS platform designed to help engineers and professionals worldwide ace technical interviews, HR behavioral rounds, and multi-language workplace conversations through real-time voice coaching.
 
-## Supported Languages (Extensible Architecture)
-1. **English** (`en-US` · Tutor: Clara Vance)
-2. **Hindi** (`hi-IN` · हिन्दी · Tutor: Aarav Sharma)
-3. **Spanish** (`es-ES` · Español · Tutor: Mateo Rivera)
-4. **French** (`fr-FR` · Français · Tutor: Camille Laurent)
-5. **German** (`de-DE` · Deutsch · Tutor: Lukas Weber)
-6. **Japanese** (`ja-JP` · 日本語 · Tutor: Haruka Sato)
-7. **Korean** (`ko-KR` · 한국어 · Tutor: Ji-hoon Park)
-8. **Mandarin Chinese** (`zh-CN` · 普通话 · Tutor: Lin Wei)
-9. **Italian** (`it-IT` · Italiano · Tutor: Sofia Conti)
-10. **Portuguese** (`pt-BR` · Português · Tutor: Lucas Almeida)
-
-New languages can be registered dynamically via `registerLanguageConfig()` in `src/config/languages.ts`.
-
-## Core Features
-- **Personalized Onboarding**: Configure native language, preferred explanation language (including Hindi + English / Hinglish), target language, CEFR proficiency level (`Beginner`, `Intermediate`, `Advanced`), daily goal, and learning objective.
-- **Real-Time Two-Way Voice Conversations**: Server-side WebSocket bridge (`/api/live-voice`) connecting to the Gemini Live API (`gemini-3.8-live`) with 16kHz PCM microphone capture and gapless 24kHz PCM playback.
-- **Resilient Hybrid Voice/Text Fallback**: Automatically detects microphone availability and language acoustic support, falling back seamlessly to `gemini-3.8-flash` + `gemini-3.8-flash-lite-tts` speech synthesis when hardware microphone streams are unavailable.
-- **Post-Conversation Bilingual Diagnostics**: Evaluates grammar, vocabulary, sentence structure, fluency, and pronunciation (with honest capability disclaimers where pitch-accent or tonal acoustics are approximated). Displays **Original Sentence**, **Corrected Sentence**, **Explanation in Preferred Language**, and **Natural Example**.
-- **Vocabulary Notebook & Revision Exercises**: Save phrases directly from conversation feedback and test retention with interactive multiple-choice grammar drills.
-- **Server-Enforced Subscription Quotas & Admin Analytics**: Free, Starter, and Pro plans enforced on the server, plus an Admin Console and production Java Spring Boot + Spring Security + MySQL integration blueprint.
+## Core Positioning & Capabilities
+- **Real-Time AI Voice Mock Interviews**: Two-way voice conversations powered by the Gemini Live API (`gemini-3.8-live`) with 16kHz PCM microphone capture and gapless 24kHz PCM playback, plus resilient hybrid text/TTS fallback (`gemini-3.8-flash` + `gemini-3.8-flash-lite-tts`).
+- **Technical Interview Practice**: Dedicated mock interview scenarios covering **Java, Spring Boot, React, SQL**, system design, and stakeholder architecture reviews.
+- **HR & Behavioral Interview Preparation**: Practice STAR-method leadership stories, career introductions, conflict resolution, and salary/offer negotiations.
+- **Spoken English & Communication Coaching**: Real-time and post-session diagnostics for grammar, vocabulary, clarity, sentence structure, and pronunciation.
+- **Bilingual Correction Explanations**: Toggleable real-time grammar corrections during voice conversations and detailed post-session reports explained in the learner's preferred language—including **Hindi-to-English (Hinglish)** explanations for Indian users.
+- **10 Supported Languages (Extensible Architecture)**:
+  1. **English** (`en-US` · Coach: Clara Vance)
+  2. **Hindi** (`hi-IN` · Hindustani · Coach: Aarav Sharma)
+  3. **Spanish** (`es-ES` · Español · Coach: Mateo Rivera)
+  4. **French** (`fr-FR` · Français · Coach: Camille Laurent)
+  5. **German** (`de-DE` · Deutsch · Coach: Lukas Weber)
+  6. **Japanese** (`ja-JP` · Nihongo · Coach: Haruka Sato)
+  7. **Korean** (`ko-KR` · Hangugeo · Coach: Ji-hoon Park)
+  8. **Mandarin Chinese** (`zh-CN` · Putonghua · Coach: Lin Wei)
+  9. **Italian** (`it-IT` · Italiano · Coach: Sofia Conti)
+  10. **Portuguese** (`pt-BR` · Português · Coach: Lucas Almeida)
+- **Personalized Learning Paths, Streaks & Subscriptions**: Daily goal reminders on login, vocabulary notebook with interactive revision drills, and server-enforced Free, Starter, and Pro plans with a Java Spring Boot + Spring Security + MySQL integration blueprint.
 
 ## Setup & Running Locally
 

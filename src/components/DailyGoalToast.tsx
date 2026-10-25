@@ -24,15 +24,15 @@ export const DailyGoalToast: React.FC<DailyGoalToastProps> = ({
       role="status"
       aria-live="polite"
       data-testid="daily-goal-toast"
-      className="bg-slate-900 text-white border border-slate-800 rounded-xl p-4 shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-4"
+      className="bg-[#0A1128] text-white border border-blue-900/60 rounded-xl p-4 shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-4"
     >
       <div className="flex items-start sm:items-center gap-3.5">
-        <div className="w-10 h-10 rounded-lg bg-amber-500/20 border border-amber-400/40 text-amber-300 flex items-center justify-center shrink-0">
+        <div className="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-400/40 text-blue-300 flex items-center justify-center shrink-0">
           <Flame className="w-5 h-5" />
         </div>
         <div className="space-y-1">
           <div className="flex flex-wrap items-center gap-2 text-xs text-slate-300">
-            <span className="font-semibold text-amber-300">Daily Goal Reminder</span>
+            <span className="font-semibold text-blue-300">Interviews Cracker Daily Goal</span>
             <span aria-hidden="true">·</span>
             <span>Target Language: {reminder.targetLanguageName}</span>
             <span aria-hidden="true">·</span>
@@ -56,7 +56,7 @@ export const DailyGoalToast: React.FC<DailyGoalToastProps> = ({
           </div>
           <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
             <div
-              className="h-full bg-sky-500 rounded-full transition-all duration-300"
+              className="h-full bg-blue-500 rounded-full transition-all duration-300"
               style={{ width: `${reminder.progressPercent}%` }}
             />
           </div>
@@ -66,7 +66,7 @@ export const DailyGoalToast: React.FC<DailyGoalToastProps> = ({
           <button
             type="button"
             onClick={onStartSpeaking}
-            className="px-4 py-2 text-xs font-semibold text-white bg-sky-600 hover:bg-sky-500 rounded-lg inline-flex items-center gap-1.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            className="px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg inline-flex items-center gap-1.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
           >
             <Mic className="w-3.5 h-3.5" />
             <span>Practice {reminder.targetLanguageName} Now</span>

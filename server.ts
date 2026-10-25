@@ -144,7 +144,7 @@ for (const lang of getAllLanguages()) {
 const store: ServerStore = {
   user: {
     name: 'Aarav Mehta',
-    email: 'aarav.mehta@speakmate.io',
+    email: 'aarav.mehta@interviewscracker.io',
     role: 'learner',
     nativeLanguage: 'Hindi (Hindustani)',
     explanationLanguage: 'hi-en',
@@ -217,7 +217,7 @@ const store: ServerStore = {
       languageName: 'English',
       proficiency: 'intermediate',
       scenarioId: 'job_interview',
-      scenarioTitle: 'Behavioral & Technical Hiring Interview',
+      scenarioTitle: 'Behavioral & Technical Hiring Interview (Java, Spring Boot, React, SQL)',
       durationMinutes: 8,
       mode: 'gemini_live_audio',
       createdAt: '2026-10-24T06:30:00Z',
@@ -284,7 +284,7 @@ const store: ServerStore = {
     liveVoiceSessionsToday: 928,
     quotaBlocksToday: 47,
     topLanguages: [
-      { code: 'en', name: 'English (Workplace & Interviews)', sharePercent: 34, activeLearners: 626 },
+      { code: 'en', name: 'English (Technical & HR Interviews)', sharePercent: 34, activeLearners: 626 },
       { code: 'es', name: 'Spanish (Español)', sharePercent: 21, activeLearners: 387 },
       { code: 'hi', name: 'Hindi (Hindustani)', sharePercent: 14, activeLearners: 258 },
       { code: 'de', name: 'German (Deutsch)', sharePercent: 11, activeLearners: 203 },
@@ -295,7 +295,7 @@ const store: ServerStore = {
       {
         id: 'usr-01',
         name: 'Aarav Mehta',
-        email: 'aarav.mehta@speakmate.io',
+        email: 'aarav.mehta@interviewscracker.io',
         nativeLang: 'Hindi',
         targetLang: 'English',
         plan: 'starter',
@@ -961,7 +961,7 @@ async function startServer() {
   app.get('/api/architecture/spring-boot', (_req, res) => {
     res.json({
       overview:
-        'SpeakMate AI is architected with a clean domain boundary so the Node/WebSocket Gemini Live media gateway integrates seamlessly with a Java 21 Spring Boot 3.4, Spring Security 6 (JWT + OAuth2), and MySQL 8.4 core persistence service.',
+        'Interviews Cracker AI is architected with a clean domain boundary so the Node/WebSocket Gemini Live media gateway integrates seamlessly with a Java 21 Spring Boot 3.4, Spring Security 6 (JWT + OAuth2), and MySQL 8.4 core persistence service.',
       mysqlSchema: `CREATE DATABASE IF NOT EXISTS speakmate_ai CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE speakmate_ai;
 

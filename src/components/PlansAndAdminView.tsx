@@ -109,14 +109,14 @@ export const PlansAndAdminView: React.FC<PlansAndAdminViewProps> = ({
               <div
                 key={plan.id}
                 className={`bg-white rounded-xl border p-6 flex flex-col justify-between ${
-                  isCurrent ? 'border-sky-600 ring-1 ring-sky-600' : 'border-slate-200'
+                  isCurrent ? 'border-blue-600 ring-1 ring-blue-600' : 'border-slate-200'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <h2 className="text-lg font-bold text-slate-900 font-display">{plan.name}</h2>
+                    <h2 className="text-lg font-bold text-[#0A1128] font-display">{plan.name}</h2>
                     {isCurrent && (
-                      <span className="text-xs font-semibold text-sky-700">Active Plan</span>
+                      <span className="text-xs font-semibold text-blue-700">Active Plan</span>
                     )}
                   </div>
                   <p className="text-xs text-slate-500 mt-1">{plan.audienceLabel}</p>
@@ -170,7 +170,7 @@ export const PlansAndAdminView: React.FC<PlansAndAdminViewProps> = ({
                   className={`mt-6 w-full py-2.5 px-4 text-xs font-semibold rounded-lg transition-colors cursor-pointer ${
                     isCurrent
                       ? 'bg-slate-100 text-slate-500 cursor-default'
-                      : 'bg-slate-900 hover:bg-slate-800 text-white'
+                      : 'bg-[#0A1128] hover:bg-blue-700 text-white'
                   }`}
                 >
                   {isCurrent
@@ -190,11 +190,11 @@ export const PlansAndAdminView: React.FC<PlansAndAdminViewProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
           <div>
             <div className="flex items-center gap-2 text-xs text-slate-500">
-              <ShieldCheck className="w-4 h-4 text-sky-600" />
-              <span>Authenticated Session · {user.email}</span>
+              <ShieldCheck className="w-4 h-4 text-blue-600" />
+              <span>Interviews Cracker Authenticated Session · {user.email}</span>
             </div>
-            <h2 className="text-lg font-bold text-slate-900 font-display mt-1">
-              Platform Administration & Usage Telemetry
+            <h2 className="text-lg font-bold text-[#0A1128] font-display mt-1">
+              Interviews Cracker AI Administration &amp; Usage Telemetry
             </h2>
           </div>
 
@@ -327,13 +327,13 @@ export const PlansAndAdminView: React.FC<PlansAndAdminViewProps> = ({
         <div className="pt-4 border-t border-slate-200">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="flex items-center gap-2.5">
-              <Database className="w-4 h-4 text-sky-600" />
+              <Database className="w-4 h-4 text-blue-600" />
               <div>
-                <h3 className="text-sm font-bold text-slate-900">
-                  Java Spring Boot, Spring Security & MySQL Enterprise Integration Blueprint
+                <h3 className="text-sm font-bold text-[#0A1128]">
+                  Java Spring Boot, Spring Security &amp; MySQL Enterprise Integration Blueprint
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Production DDL schema and Spring Security 6 filter chain for synchronizing SpeakMate AI quotas and sessions with a Java backend.
+                  Production DDL schema and Spring Security 6 filter chain for synchronizing Interviews Cracker AI quotas and sessions with a Java backend.
                 </p>
               </div>
             </div>

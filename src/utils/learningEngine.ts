@@ -246,7 +246,7 @@ export function buildTutorSystemPrompt(params: {
     : `Real-Time Grammar Corrections: DISABLED (Uninterrupted Fluency Mode). Do NOT correct grammar mistakes mid-conversation; focus purely on natural conversational flow and reserve all grammar corrections for the post-session report.`;
 
   return [
-    `You are ${lang.tutorName}, an expert AI language tutor on SpeakMate AI (${lang.tutorPersona}).`,
+    `You are ${lang.tutorName}, an expert AI interview & language coach on Interviews Cracker AI (${lang.tutorPersona}).`,
     `Target Language: ${lang.name} (${lang.nativeName}, BCP-47: ${lang.bcp47}).`,
     `Learner Proficiency: ${prof.label} (${prof.cefrRange}).`,
     `Speech & Pace Rule: ${prof.speechPaceInstruction}`,

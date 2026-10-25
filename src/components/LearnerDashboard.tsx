@@ -140,15 +140,15 @@ export const LearnerDashboard: React.FC<LearnerDashboardProps> = ({
       <div className="bg-white border border-slate-200 rounded-xl overflow-hidden">
         <div className="p-5 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
-            <h2 className="text-base font-bold text-slate-900 font-display">
-              Multi-Language Speaking Progress (10 Supported Languages)
+            <h2 className="text-base font-bold text-[#0A1128] font-display">
+              Interviews Cracker Learning Path &amp; Multi-Language Progress (10 Supported Languages)
             </h2>
             <p className="text-xs text-slate-500 mt-0.5">
-              Track speaking minutes, completed lessons, and proficiency calibration for every language module.
+              Track mock interview minutes, completed coaching lessons, and proficiency calibration across every language module.
             </p>
           </div>
           <span className="text-xs text-slate-500 font-mono">
-            Click any row to launch voice tutor
+            Click any row to launch voice coach
           </span>
         </div>
 

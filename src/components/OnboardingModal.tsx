@@ -65,21 +65,21 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     <div className="bg-white border border-slate-200 rounded-xl p-6 lg:p-8 shadow-sm">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-6 border-b border-slate-200">
         <div>
-          <p className="text-xs font-medium text-sky-700 tracking-wide">
-            Personalized Language & Voice Calibration
+          <p className="text-xs font-medium text-blue-700 tracking-wide">
+            Personalized Interview Track &amp; Multi-Language Voice Calibration
           </p>
-          <h1 className="text-2xl lg:text-3xl font-bold text-slate-900 mt-1 font-display">
-            Configure Your SpeakMate AI Studio
+          <h1 className="text-2xl lg:text-3xl font-bold text-[#0A1128] mt-1 font-display">
+            Configure Your Interviews Cracker AI Studio
           </h1>
           <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-            Select from 10 supported spoken languages, set your current CEFR proficiency, and choose how grammar corrections are explained—including Hindi-to-English explanations for Indian learners.
+            Prepare for technical interviews (Java, Spring Boot, React, SQL), HR rounds, and spoken communication across 10 supported languages—with bilingual grammar and answer-structure explanations.
           </p>
         </div>
         {onClose && (
           <button
             type="button"
             onClick={onClose}
-            className="self-start lg:self-center px-4 py-2 text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap shrink-0"
+            className="self-start lg:self-center px-4 py-2 text-xs font-medium text-[#0A1128] bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors whitespace-nowrap shrink-0"
           >
             Back to Studio
           </button>
@@ -90,12 +90,12 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         {/* Step 1: 10-Language Selection Grid */}
         <section>
           <div className="flex items-center justify-between mb-3">
-            <label className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-              <Globe className="w-4 h-4 text-sky-600" />
-              <span>01. Select Target Speaking Language (10 Languages Available)</span>
+            <label className="text-sm font-semibold text-[#0A1128] flex items-center gap-2">
+              <Globe className="w-4 h-4 text-blue-600" />
+              <span>01. Select Target Speaking &amp; Interview Language (10 Languages Available)</span>
             </label>
             <span className="text-xs text-slate-500">
-              Active Tutor: {selectedLangObj.tutorName} · {selectedLangObj.scriptType}
+              Active Coach: {selectedLangObj.tutorName} · {selectedLangObj.scriptType}
             </span>
           </div>
 
@@ -110,18 +110,18 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   aria-pressed={isSelected}
                   className={`text-left p-3.5 rounded-lg border transition-all flex flex-col justify-between ${
                     isSelected
-                      ? 'border-sky-600 bg-sky-50/60 text-slate-900 ring-1 ring-sky-600'
+                      ? 'border-blue-600 bg-blue-50/60 text-[#0A1128] ring-1 ring-blue-600'
                       : 'border-slate-200 bg-white hover:border-slate-300 text-slate-700'
                   }`}
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className="w-8 h-8 rounded-md bg-slate-900 text-white font-mono text-xs font-semibold flex items-center justify-center shrink-0">
+                    <span className="w-8 h-8 rounded-md bg-[#0A1128] text-white font-mono text-xs font-semibold flex items-center justify-center shrink-0">
                       {lang.monogram}
                     </span>
-                    {isSelected && <Check className="w-4 h-4 text-sky-600 shrink-0" />}
+                    {isSelected && <Check className="w-4 h-4 text-blue-600 shrink-0" />}
                   </div>
                   <div className="mt-3">
-                    <div className="font-semibold text-sm text-slate-900 whitespace-nowrap truncate">
+                    <div className="font-semibold text-sm text-[#0A1128] whitespace-nowrap truncate">
                       {lang.name}
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5 truncate">
@@ -129,7 +129,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     </div>
                   </div>
                   <div className="mt-2 pt-2 border-t border-slate-100 text-[11px] text-slate-500 truncate">
-                    Tutor: {lang.tutorName}
+                    Coach: {lang.tutorName}
                   </div>
                 </button>
               );
@@ -345,9 +345,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
           <button
             type="submit"
             disabled={saving}
-            className="px-6 py-2.5 text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            className="px-6 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
           >
-            {saving ? 'Calibrating Tutor...' : 'Save Preferences & Launch Tutor Studio'}
+            {saving ? 'Calibrating Coach...' : 'Save Preferences & Launch Interviews Cracker Studio'}
           </button>
         </div>
       </form>

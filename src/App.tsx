@@ -156,8 +156,10 @@ export default function App() {
     return (
       <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-6">
         <div className="text-center space-y-2">
-          <div className="text-lg font-bold font-display text-slate-900">SpeakMate AI</div>
-          <p className="text-xs text-slate-500">Loading multi-language voice studio...</p>
+          <div className="text-lg font-bold font-display text-[#0A1128]">Interviews Cracker AI</div>
+          <p className="text-xs text-slate-500">
+            Loading AI voice mock interviews &amp; multi-language coaching studio...
+          </p>
         </div>
       </div>
     );
@@ -196,7 +198,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0F172A]">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0A1128]">
       {/* Strict 3-Zone Top Bar Contract */}
       <header className="flex items-center justify-between gap-8 px-6 py-4 bg-white border-b border-slate-200">
         {/* Zone 1: Single text element wordmark */}
@@ -206,9 +208,9 @@ export default function App() {
             e.preventDefault();
             setActiveTab('studio');
           }}
-          className="text-lg font-bold tracking-tight text-slate-900 font-display whitespace-nowrap shrink-0"
+          className="text-lg font-bold tracking-tight text-[#0A1128] font-display whitespace-nowrap shrink-0"
         >
-          SpeakMate AI
+          Interviews Cracker
         </a>
 
         {/* Zone 2: 5 clean single-line text navigation links */}
@@ -228,8 +230,8 @@ export default function App() {
                 }}
                 className={`transition-colors whitespace-nowrap shrink-0 py-1 border-b-2 ${
                   isActive
-                    ? 'text-slate-900 border-sky-600 font-semibold'
-                    : 'text-slate-600 border-transparent hover:text-slate-900 hover:border-slate-300'
+                    ? 'text-[#0A1128] border-blue-600 font-semibold'
+                    : 'text-slate-600 border-transparent hover:text-[#0A1128] hover:border-slate-300'
                 }`}
               >
                 {item.label}
@@ -245,7 +247,7 @@ export default function App() {
             onClick={() =>
               setActiveTab(activeTab === 'onboarding' ? 'studio' : 'onboarding')
             }
-            className="px-4 py-2 text-xs font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            className="px-4 py-2 text-xs font-semibold text-white bg-[#0A1128] rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
           >
             {activeTab === 'onboarding' ? 'Open Voice Studio' : 'Configure Languages'}
           </button>
@@ -265,7 +267,7 @@ export default function App() {
               type="button"
               onClick={() => setActiveTab(item.id)}
               className={`px-1.5 py-1.5 text-[11px] font-medium rounded-md text-center truncate ${
-                isActive ? 'bg-slate-900 text-white' : 'text-slate-600 hover:bg-slate-100'
+                isActive ? 'bg-[#0A1128] text-white' : 'text-slate-600 hover:bg-slate-100'
               }`}
             >
               {item.label}
@@ -363,23 +365,23 @@ export default function App() {
       {/* Quiet Editorial Footer */}
       <footer className="border-t border-slate-200 bg-white px-6 py-4 text-xs text-slate-500 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
-          SpeakMate AI · Multi-Language Voice Learning Platform · 10 Supported Languages
+          Interviews Cracker AI · AI Voice Mock Interviews (Java, Spring Boot, React, SQL), HR Coaching &amp; 10-Language Platform
         </div>
         <div className="flex items-center gap-4">
           <button
             type="button"
             onClick={() => setActiveTab('onboarding')}
-            className="hover:text-slate-900 cursor-pointer"
+            className="hover:text-[#0A1128] cursor-pointer"
           >
-            Language Calibration
+            Interview &amp; Language Calibration
           </button>
           <span aria-hidden="true">·</span>
           <button
             type="button"
             onClick={() => setActiveTab('plans')}
-            className="hover:text-slate-900 cursor-pointer"
+            className="hover:text-[#0A1128] cursor-pointer"
           >
-            Plans & Spring Boot Architecture
+            Plans &amp; Spring Boot Architecture
           </button>
         </div>
       </footer>
